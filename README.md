@@ -8,13 +8,13 @@ For more information about OntoUML, visit [OntoUML community portal](https://ont
 
 ----
 
-:bangbang: **WORK IN PROGRESS** - I'm working on this project and it is not completed yet. Texts can contain some mistakes, graphics should be OK. I will review it asap with experts but I welcome any issues/PRs...
+:exclamation: **WORK IN PROGRESS** - I'm working on this project and it is not completed yet. Texts can contain some mistakes, graphics should be OK. I will review it asap with experts but I welcome any issues/PRs...
 
 ## Parts
 
 1. [Simple OntoUML model](01_the-model.md)
 2. [Partitions explanation](02_partitions.md)
-3. [Forest explanation](30_forest.md)
+3. [Forest explanation](03_forest.md)
 
 ## Usage
 
@@ -22,4 +22,6 @@ Try to go thru materials and if is something unclear or you have some ideas abou
 
 ## License
 
-Full content of this repository is licensed under the Creative Commons License BY-SA 4.0 - see the LICENSE file for more details.
+Full content of this repository is licensed under the Creative Commons License BY-SA 4.0 - see the [LICENSE](LICENSE) file for more details.
+
+It is better to use link/fork instead of "hard" copy of this project, because it will evolve over time...
