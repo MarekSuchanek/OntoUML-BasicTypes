@@ -9,7 +9,7 @@ For more information about OntoUML, visit [OntoUML community portal](https://ont
 ## Parts
 
 1. [Simple OntoUML model](01_the-model.md)
-2. Partitions explanation
+2. [Partitions explanation](02_partitions.md)
 3. Forest explanation
 
 ## Usage
