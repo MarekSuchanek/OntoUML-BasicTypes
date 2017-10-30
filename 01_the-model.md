@@ -4,10 +4,10 @@ First of all, let's take a look at our model which we are going to talk about.
 
 ![OntoUML model][model_plain]
 
-Nice huh?! Now just a little reminder of basic OntoUML stereotypes:
+Nice huh?! Now just a little reminder of basic OntoUML stereotypes (defined in UFO):
 
 * **Kind** = rigid sortal providing identity
-* **Subkind** = rigid sortal (not providing identity) - yeah it is not in this model currently...
+* **Subkind** = rigid sortal (not providing identity) - yeah, it is not in this model currently...
 * **Role** = anti-rigid sortal which is relationally dependent
 * **Phase** = anti-rigid sortal which depends just on intristic properties
 * **Category** = rigid non-sortal
@@ -16,15 +16,15 @@ Nice huh?! Now just a little reminder of basic OntoUML stereotypes:
 
 If words like rigid or sortal are not clear to you, don't worry - we are going to find out!
 
-Recall what you know about UML and notice which classes are abstract (hint: name is written by *italic*). All non-sortals are abstract classes and just like in programming, you cannot have instances of these and you must have some subclasses to make instances. The inheritance is marked by lines with empty arrowhead. Now you have enough knowledge to know about identity...
+Recall what you know about UML and notice which classes are abstract (hint: name is written by *italic*). All non-sortals are abstract classes and just like in programming, you cannot have instances of these and you must have some concrete subclasses to make instances. The inheritance is marked by lines with empty arrowhead. Now you have enough knowledge to know about identity...
 
 ## Mighty identity
 
-Sortals are types which are not abstract, can be instantiated and for that they need the identity. Every object in the world need to have one unique identity so you can tell if it is the same or if it is not. **Kind**s provide identity, each **kind** has a different principle of identity (it is a lot about philosophy and cognitive science - how we understand the world). Let me show you in the model identity providers.
+Sortals are types which are not abstract, can be instantiated and for that they need the identity. Every object in the world needs to have one unique identity so you can tell if it is the same or if it is not. **Kind**s provide identity, each **kind** has a different principle of identity (it is a lot about philosophy and cognitive science - how we understand the world). Let me show you identity providers in the model.
 
 ![Identity providers in OntoUML model][model_idproviders]
 
-Remember those colors showing different identity principles - those will be used in all materials here. So, **kind**s in this model provide the identity... but to who? To other sortals which are in their inheritance tree. Here is also important to say again that sortal must have exactly **one** identity and thus cannot inherit from multiple identity provides but just (and exactly) **one**!
+Remember those colors showing different identity principles - those will be used in all materials here. So, **kind**s in this model provide the identity... but to who? To other sortals which are in their inheritance tree. Here is also important to say again that sortal must have exactly **one** identity and thus cannot inherit from multiple identity providers but just (and exactly) **one**!
 
 ![Identity in OntoUML model][model_identity]
 
@@ -34,7 +34,7 @@ As you can see identity spreads in opposite direction of inheritance and it mean
 
 Last thing you remember from this short file is what **disjoint** and **complete** means:
 
-* **disjoint** = there can not be object which is instance of multiple classes of this partition (e.g. *AI Simulation* object can be instance of exactly one of given phases: *Learning*, *Ready/Learned*, *Overlearned*. It means it cannot be *Learning* and *Ready/Learned* at the same moment)
+* **disjoint** = there can not be object which is instance of multiple classes of this partition (e.g. *AI Simulation* object can be instance of exactly one of given phases: *Learning*, *Ready/Learned*, *Overlearned*. It means it cannot be *Learning* and *Ready/Learned* at the same moment.)
 * **complete** = there can not be object which is not instance of some class of this partition (e.g. *AI Simulation* object must be instance of some of the given phases)
 
 If you are still not sure about that, think about these classes (subclasses of *Integer*):

@@ -6,7 +6,7 @@ Following model is trying to show our model as a forest where trees are formed b
 
 ![Kinds and identity][forest_kinds]
 
-* Now lets add other *sortals* which belongs under each of those root/roofs.
+* Now lets add other *sortals* which belongs under each of those root/roofs. Notice that as in other drawings, trees/houses are also disjoint.
 
 ![Other sortals][forest_sortals]
 
@@ -14,11 +14,11 @@ Following model is trying to show our model as a forest where trees are formed b
 
 ![Relations][forest_relations]
 
-* We can use **category** to declare some properties common for multiple trees. Example of that is *Social Entity*.
+* We can use **category** to declare some common properties for multiple trees. Example of that is *Social Entity*.
 
 ![Category][forest_category]
 
-* Relation *submits* is common to both *Individual Test Subject* and *Group Test Subject* **role**s, so let's make more robust and DRY solution with **roleMixin** *Test Subject*.
+* Relation *submits* is common to both *Individual Test Subject* and *Group Test Subject* **role**s, so let's make more robust and [DRY] solution with **roleMixin** *Test Subject*.
 
 ![RoleMixin][forest_rolemixin]
 
@@ -26,6 +26,8 @@ Following model is trying to show our model as a forest where trees are formed b
 
 ![Mixin][forest_mixin]
 
+
+[DRY]: https://en.wikipedia.org/wiki/Don%27t_repeat_yourself
 
 [forest_kinds]: graphics/forest/01_kinds.png
 [forest_sortals]: graphics/forest/02_sortals.png
